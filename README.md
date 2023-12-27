@@ -22,7 +22,7 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
 clone the repository by running the following command inside a terminal
 
 ```
-git clone https://www.github.com/Egojoefavour/hangman263
+git clone https://www.github.com/Egojoefavour/hangman263.git
 ```
 
 Then within the folder, run
