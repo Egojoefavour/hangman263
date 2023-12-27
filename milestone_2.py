@@ -3,19 +3,11 @@ print(word_list)
 
 import random
 
-print(random.choice(word_list))
-
-word = []
-for fruit in word_list:
- 
-  if random.choice(word_list) == fruit:
-   word.append(fruit)
+word = random.choice(word_list)
 print(word)
 
 guess = input('Enter a letter')
-for char in guess:
- if len(guess) == 1 and char.isalpha() == True:
+if len(guess) == 1 and guess.isalpha() == True:
    print("Good guess!")
-   
- else:
-  print("Oops! That is not a valid input.")
+else:
+   print("Oops! That is not a valid input.")
