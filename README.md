@@ -30,5 +30,8 @@ Then within the folder, run
 ```
 milestone_2.py
 ```
+```
+milestone_3.py
+```
 
 ### License of the project
