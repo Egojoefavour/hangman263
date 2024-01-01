@@ -15,7 +15,7 @@ def check_guess(guess):
      if len(guess) == 1 and guess.isalpha() == True:
           break
      else:
-          print("Invalid letter. Please, enter a single alphabetical character.")
+          print(f"Invalid letter. Please, enter a single alphabetical character.")
 
 check_guess(guess)
           
