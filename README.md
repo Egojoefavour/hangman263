@@ -2,7 +2,7 @@
 
 
 ## Project status
-This project is still in development **26/12/23**
+This project is complete **1/1/24**
 
 ### Introduction
 Hangman is a classic game in which a player thinks of a word and the other player tries to guess that word within a certain amount of attempts.
@@ -32,6 +32,12 @@ milestone_2.py
 ```
 ```
 milestone_3.py
+```
+```
+milestone_4.py
+```
+```
+milestone_5.py
 ```
 
 ### License of the project
