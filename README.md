@@ -13,19 +13,17 @@ This is an implementation of the Hangman game, where the computer thinks of a wo
 ```
 
 
-hangman263 project tree
-├── milestone_5.py
-│   
-│    
-│     
-│   
-│   
-├── README.md
-│   
-│   
-└──
+   \---hangman263
+    |   .gitignore
+    |   milestone_2.py
+    |   milestone_3.py
+    |   milestone_4.py
+    |   milestone_5.py
+    |   README.md
+    |   
+    
 
-1 directory, two files
+1 directory, six files
 
 
 ```
