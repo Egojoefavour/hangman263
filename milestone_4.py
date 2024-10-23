@@ -4,7 +4,8 @@ import random
 class Hangman:
     def __init__(self,  word_list, num_lives = 5 ):
       self.word = random.choice(word_list)
-      self.word_guessed = ['_', '_', '_', '_', '_']
+      self.word_guessed = list('_'*len(self.word))
+      print(self.word_guessed)
       self.num_letters = len(set(self.word))
       self.num_lives = num_lives
       self.word_list = word_list
@@ -12,12 +13,13 @@ class Hangman:
     
     
     def check_guess(self, guess):
-      guess = guess.lower()
-      if guess  in self.word:
+      
+      if guess.lower()  in self.word:
        print(f"Good guess! {guess} is in the word.")
-       for index, letters in enumerate(self.word):
-        if letters == guess:
-         self.word_guessed[index] = letters
+       for index, letter in enumerate(self.word):
+        if self.word[index] == guess:
+         self.word_guessed[index] = letter
+         print(self.word_guessed)
        self.num_letters -= 1
       else:
         self.num_lives -= 1
