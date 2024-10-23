@@ -36,8 +36,8 @@ class Hangman:
         Asks the user for a letter.
     '''
     def __init__(self,  word_list, num_lives = 5 ):
-        self.word = random.choice(word_list)  
-        self.word_guessed = ['_', '_', '_', '_', '_', '_', '_', '_', '_', '_']  
+        self.word = random.choice(word_list) 
+        self.word_guessed = list('_'* len(self.word))
         self.num_letters = len(set(self.word)) 
         self.num_lives = num_lives
         self.word_list = word_list
@@ -61,10 +61,13 @@ class Hangman:
         '''
         if letter.lower()  in self.word:
             print(f"Good guess! {letter} is in the word.")
-            for index, letters in  enumerate(self.word):
-             self.word_guessed[index] = letter
-              
+            for i, letters in  enumerate(self.word):
+                if self.word[i] == letter:
+                   self.word_guessed[i] = letters
+                   print(self.word_guessed)
+                   pass
             self.num_letters -= 1
+            
         else:
             self.num_lives -= 1
             print(f"Sorry, {letter} is not in the word.")
@@ -88,8 +91,10 @@ class Hangman:
             self.check_letter(letter) 
             
            
-           self.list_of_guesses.append(letter) 
+           self.list_of_guesses.append(letter)
            break
+           
+           
            
 def play_game(word_list):
     
